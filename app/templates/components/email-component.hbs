@@ -1,0 +1,13 @@
+<div class="emailForm">
+	<fieldset>
+		<label for="">To:</label>
+		{{input value=emailTo}}
+		<label for="">Subject:</label>
+		{{input value=subject}}
+		
+
+		<label for="">Email Text:</label>
+		{{textarea value=emailBody cols="80" rows="6"}}
+		<button {{action "sendEmail"}}>Send Email</button>
+	</fieldset>
+</div>ø
