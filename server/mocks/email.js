@@ -5,7 +5,7 @@ module.exports = function(app) {
     var emailRouter = express.Router();
     var nodemailer = require('nodemailer');
     //Replace the username and password below to connect to GMail SMTP.
-    var transporter = nodemailer.createTransport('smtps://<<put your username here >>%40gmail.com:<<put your password here>>@smtp.gmail.com');
+    var transporter = nodemailer.createTransport('smtps://sanketsharma%40gmail.com:honkie1donkie2@smtp.gmail.com');
 
 
     emailRouter.get('/', function(req, res) {
@@ -23,7 +23,7 @@ module.exports = function(app) {
 
 
         var mailOptions = {
-            from: 'Ember Emailer 👥 <replace your gmail address here>', // sender address
+            from: 'Ember Emailer 👥 <sanketsharma@gmail.com>', // sender address
             to: req.body.to, // list of receivers
             subject: req.body.subject + ' ✔', // Subject line
             text: req.body.body + '🐴', // plaintext body
