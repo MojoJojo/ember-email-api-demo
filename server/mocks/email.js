@@ -23,7 +23,7 @@ module.exports = function(app) {
 
 
         var mailOptions = {
-            from: 'Ember Emailer 👥 <sanket.sharma@dukstra.com>', // sender address
+            from: 'Ember Emailer 👥 <replace your gmail address here>', // sender address
             to: req.body.to, // list of receivers
             subject: req.body.subject + ' ✔', // Subject line
             text: req.body.body + '🐴', // plaintext body
