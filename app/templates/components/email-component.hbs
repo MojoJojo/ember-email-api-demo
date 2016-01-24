@@ -1,3 +1,10 @@
+{{#power-select options=languages selected=language onchange=(action "changeLanguage") as |language|}}
+      <img src="{{language.flagUrl}}" class="icon-flag"> <strong>{{language.name}}</strong>
+{{/power-select}}
+
+
+<h1>{{t "ember.upwork.title"}}</h1>
+
 <div class="emailForm">
 	<fieldset>
 		<label for="">To:</label>
